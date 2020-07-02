@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/add_student"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/studentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:hint="@string/enter_name"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/degree_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/studentName"
+                android:layout_alignParentStart="true"
+                android:layout_alignStart="@+id/studentName"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/arial"
+                android:text="Degree"
+                android:textColor="@android:color/black"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_degree"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studentName"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/degree_text"
+                android:prompt="@string/spinnerPrompt"
+                android:spinnerMode="dropdown"
+                android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+
+
+            <TextView
+                android:id="@+id/course_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/degree_text"
+                android:layout_alignParentStart="true"
+                android:layout_alignStart="@+id/studentName"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/arial"
+                android:text="Course"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_course"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_degree"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_alignBottom="@+id/course_text"
+                android:autofillHints="@string/enter_name"
+                android:prompt="@string/spinnerPrompt"
+                android:spinnerMode="dropdown"
+                android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+
+            <TextView
+                android:id="@+id/group_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/course_text"
+                android:layout_alignParentStart="true"
+                android:layout_alignStart="@+id/studentName"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/arial"
+                android:text="Group"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_group"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_course"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/group_text"
+                android:prompt="@string/spinnerPrompt"
+                android:spinnerMode="dropdown"
+                android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+
+            <TextView
+                android:id="@+id/year_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/group_text"
+                android:layout_alignParentStart="true"
+                android:layout_alignStart="@+id/course_text"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/arial"
+                android:text="Year"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_year"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_group"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/year_text"
+                android:prompt="@string/spinnerPrompt"
+                android:spinnerMode="dropdown"
+                android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+
+
+
+            <ProgressBar
+                android:id="@+id/progressBar_AddStudent"
+                style="?android:attr/progressBarStyle"
+                android:layout_below="@id/year_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/addStudentFingerPrint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progressBar_AddStudent"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/popup_button_theme"
+                android:fontFamily="sans-serif-light"
+                android:layout_alignStart="@+id/studentName"
+                android:layout_alignEnd="@+id/studentName"
+                android:padding="15dp"
+                android:text="Scan FingerPrint"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/saveStudentButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addStudentFingerPrint"
+                android:layout_marginTop="15dp"
+                android:layout_alignStart="@+id/studentName"
+                android:layout_alignEnd="@+id/studentName"
+                android:background="@drawable/popup_button_theme"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/save_button"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/titu"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_below="@id/logo"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@color/titu"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="258dp"
+            android:layout_height="148dp"
+            android:layout_marginBottom="60dp"
+            android:src="@drawable/logo" />
+
+        <Button
+            android:id="@+id/add_profilePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_photo"
+            android:padding="33dp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/email_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/caviar"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="14sp" />
+
+
+        <EditText
+            android:id="@+id/username_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/caviar"
+            android:hint="username"
+            android:textColor="@color/white"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/white"
+            android:textSize="14sp" />
+
+
+
+
+
+        <EditText
+            android:id="@+id/password_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/caviar"
+            android:hint="password"
+            android:textColor="@color/white"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/create_acct_progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/create_acct_button"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn_login"
+            android:fontFamily="@font/caviar"
+            android:text="Create Account"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/titu"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</LinearLayout>

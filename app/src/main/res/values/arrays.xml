@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="degree">
+        <item>Informatica</item>
+        <item>Psihologie</item>
+        <item>Medicina</item>
+    </string-array>
+
+    <string-array name="year">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="group">
+        <item>101</item>
+        <item>102</item>
+        <item>103</item>
+    </string-array>
+</resources>

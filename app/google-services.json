@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "688080519288",
+    "firebase_url": "https://schoolattendance-36bad.firebaseio.com",
+    "project_id": "schoolattendance-36bad",
+    "storage_bucket": "schoolattendance-36bad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688080519288:android:5ce44330481434b9882d8d",
+        "android_client_info": {
+          "package_name": "com.andrushka.schoolattendance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688080519288-lf37dtshfrmkf1pts67l3ch88feifta6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKPTy7xqOLJzUOpIX4o9enz_6i-TIMeCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "688080519288-lf37dtshfrmkf1pts67l3ch88feifta6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
